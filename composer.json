@@ -6,7 +6,13 @@
      "require": {
         "php": ">=5.5"
     },
+     "autoload": {
+        "psr-4": {
+            "DgroupsVariables\\": "/src"
+        }
+    },
     "autoload": {
+        "classmap": [""]
         "files": [
             "config.php"
         ]
