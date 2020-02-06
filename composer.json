@@ -2,9 +2,9 @@
     "name": "dgroups/variables-umi",
     "description": "All variables UMI.CMS for quick development",
     "version": "1.0.0",
-    "license": "AGPL-1.0-or-later",
+    "license": "MIT",
      "require": {
-        "php": ">=5.3"
+        "php": ">=5.5"
     },
     "autoload": {
         "files": [
