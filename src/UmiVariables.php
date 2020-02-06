@@ -18,11 +18,19 @@ class UmiVariables{
       define("REQUEST_URI",getArrayKey($variables,'@request-uri'));
 
       $page = getArrayKey($variables,'full:page');
+      define("PARENT_ID",$page instanceof umiHierarchyElement ? $page->getParentId() : false);
+      define("PAGE_OTYPE_ID",$page instanceof umiHierarchyElement ? $page->getObjectTypeId() : false);
+
       $parents = getArrayKey($variables,'parents');
       $parents = getArrayKey($variables,'+page');
 
-      define("PAGE_ID",$page instanceof umiHierarchyElement ? $page->getId() : false);
+      define('TABLE_H', 'cms3_hierarchy');
+      define('TABLE_O', 'cms3_hierarchy');
+      define('TABLE_OC', 'cms3_hierarchy');
+
+      define("IS_TABLET",\UmiCms\Service::BrowserDetector()->isTablet());
+      define("IS_MOBILE",\UmiCms\Service::BrowserDetector()->isMobile());
 
   }
-
+  
 }
