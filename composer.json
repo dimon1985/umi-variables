@@ -1,7 +1,7 @@
 {
     "name": "dgroups/variables-umi",
     "description": "All variables UMI.CMS for quick development",
-    "version": "1.0.0"
+    "version": "1.0.0",
     "license": "ogp",
      "require": {
         "php": ">=5.3"
