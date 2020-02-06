@@ -1,4 +1,9 @@
 <?php
+
+/*
+ * Добавляет константы в шаблон
+ * */
+
 namespace DgroupsVariables;
 
 class UmiVariables{
@@ -15,8 +20,9 @@ class UmiVariables{
       $page = getArrayKey($variables,'full:page');
       $parents = getArrayKey($variables,'parents');
       $parents = getArrayKey($variables,'+page');
-      
+
       define("PAGE_ID",$page instanceof umiHierarchyElement ? $page->getId() : false);
-      
+
   }
+
 }
