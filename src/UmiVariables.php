@@ -2,7 +2,7 @@
 namespace DgroupsVariables;
 
 class UmiVariables{
-  public module defineVars($variables)
+  public function defineVars($variables)
   {
     var_dump($variables);
     exit();
