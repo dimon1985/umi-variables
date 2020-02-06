@@ -2,7 +2,7 @@
     "name": "dgroups/variables-umi",
     "description": "All variables UMI.CMS for quick development",
     "version": "1.0.0",
-    "license": "ogp",
+    "license": "AGPL-1.0-or-later",
      "require": {
         "php": ">=5.3"
     },
