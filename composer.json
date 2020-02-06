@@ -10,6 +10,8 @@
         "files": [
             "config.php"
         ]
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
 
